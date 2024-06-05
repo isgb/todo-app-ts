@@ -10,7 +10,7 @@ export const CreateTodo: React.FC<Props> = ({ saveTodo }) => {
   const handleKeyDown: React.KeyboardEventHandler<HTMLInputElement> = (e) => {
     if (e.key === 'Enter' && inputValue !== '') {
       saveTodo(inputValue)
-    //   setInputValue('')
+      setInputValue('')
     }
   }
 
